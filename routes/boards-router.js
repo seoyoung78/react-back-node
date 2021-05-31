@@ -7,7 +7,7 @@ const router = express.Router();
 
 router.get("", async (req, res, next) => {
   try {
-    // for(var i = 1; i < 100; i++) {
+    // for(var i = 1; i <= 100; i++) {
     //   const board = {
     //     btitle: "제목" + i,
     //     bcontent: "내용" + i,

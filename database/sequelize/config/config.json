@@ -3,7 +3,7 @@
     "username": "user",
     "password": "12345",
     "database": "user",
-    "host": "192.168.3.166",
+    "host": "localhost",
     "dialect": "mysql",
     "pool": {
       "max": 3,
@@ -14,7 +14,7 @@
     "username": "user",
     "password": "12345",
     "database": "user",
-    "host": "192.168.3.166",
+    "host": "localhost",
     "dialect": "mysql",
     "pool": {
       "max": 3,
@@ -25,7 +25,7 @@
     "username": "user",
     "password": "12345",
     "database": "user",
-    "host": "192.168.3.166",
+    "host": "localhost",
     "dialect": "mysql",
     "pool": {
       "max": 3,
