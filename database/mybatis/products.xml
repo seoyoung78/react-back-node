@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="products">
+  <select id="selectByPage">
+    SELECT pid, name, description, category, price
+    FROM products
+    ORDER BY pid DESC
+  </select>
+
+  <select id="selectByPid">
+    SELECT pid, name, description, category, price
+    FROM products
+    WHERE pid=${pid}
+  </select>  
+
+  <select id="selectInsertedPid" resultType="int">
+    select last_insert_id() as pid
+  </select>
+
+  <insert id="insert">
+    INSERT INTO products (name, description, category, price)
+    VALUES (#{name}, #{description}, #{category}, ${price})
+  </insert> 
+
+  <update id="update">
+    UPDATE products
+    SET 
+      name=#{name}, 
+      description=#{description}, 
+      category=#{category}, 
+      price=${price}
+    WHERE pid=${pid}
+  </update>
+
+  <delete id="deleteByPid">
+    DELETE FROM products
+    WHERE pid=${pid}
+  </delete>    
+</mapper>

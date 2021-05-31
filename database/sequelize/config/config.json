@@ -1,0 +1,35 @@
+{
+  "development": {
+    "username": "user",
+    "password": "12345",
+    "database": "user",
+    "host": "192.168.3.166",
+    "dialect": "mysql",
+    "pool": {
+      "max": 3,
+      "min": 1
+    }
+  },
+  "test": {
+    "username": "user",
+    "password": "12345",
+    "database": "user",
+    "host": "192.168.3.166",
+    "dialect": "mysql",
+    "pool": {
+      "max": 3,
+      "min": 1
+    }
+  },
+  "production": {
+    "username": "user",
+    "password": "12345",
+    "database": "user",
+    "host": "192.168.3.166",
+    "dialect": "mysql",
+    "pool": {
+      "max": 3,
+      "min": 1
+    }
+  }
+}
