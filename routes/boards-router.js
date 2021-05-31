@@ -7,6 +7,15 @@ const router = express.Router();
 
 router.get("", async (req, res, next) => {
   try {
+    // for(var i = 1; i < 100; i++) {
+    //   const board = {
+    //     btitle: "제목" + i,
+    //     bcontent: "내용" + i,
+    //     bwriter: "user1"
+    //   };
+    //   await boardsService.create(board);
+    // };
+    
     let pageNo = req.query.pageNo? parseInt(req.query.pageNo) : 1;
     const totalRows = await boardsService.totalRows();
     const pager = paging.init(5, 5, pageNo, totalRows);
